@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+
+    <com.theradioapp.views.TextViewCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp5"
+        android:text="DATA"
+        android:textSize="@dimen/sp13"
+        app:custom_fonts="@string/helveticaNeue_medium" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.theradioapp.views.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.75"
+                android:gravity="center|fill"
+                android:paddingLeft="@dimen/dp30"
+                android:text="Wi-fi Only"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <Switch
+                android:id="@+id/switchWifi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:paddingRight="@dimen/dp30" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <com.theradioapp.views.TextViewCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:text="Turn on wifi only to prevent playback on cellular."
+        android:textSize="@dimen/sp12"
+        app:custom_fonts="@string/helveticaNeue_medium" />
+
+    <com.theradioapp.views.TextViewCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp5"
+        android:text="About"
+        android:textSize="@dimen/sp13"
+        app:custom_fonts="@string/helveticaNeue_medium" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.theradioapp.views.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|fill"
+                android:paddingLeft="@dimen/dp30"
+                android:text="Version"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvVersion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:text="@string/app_name"
+                android:textColor="@color/colorAccent"
+                app:custom_fonts="@string/helvetica_Bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.theradioapp.views.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|fill"
+                android:paddingLeft="@dimen/dp30"
+                android:text="Install Date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvInstallDate"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:text="@string/app_name"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.theradioapp.views.TextViewCustom
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|fill"
+                android:paddingLeft="@dimen/dp30"
+                android:text="Total Listening Time"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvListeningTime"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_weight="0.5"
+                android:gravity="center|right"
+                android:text="@string/app_name"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+
+        <com.theradioapp.views.TextViewCustom
+            android:id="@+id/tvReport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Report a Problem"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp15"
+            app:custom_fonts="@string/helveticaNeue_medium" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginTop="@dimen/dp2"
+        android:layout_marginRight="-15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/dp2">
+
+
+        <com.theradioapp.views.TextViewCustom
+            android:id="@+id/tvVisitSite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Visit Website"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp15"
+            app:custom_fonts="@string/helveticaNeue_medium" />
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

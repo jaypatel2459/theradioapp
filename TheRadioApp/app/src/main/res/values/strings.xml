@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tinsel &amp; Tunes</string>
+    <string name="title">The world\'s favorite Christmas Music Radio Station</string>
+    <string name="helvetica_Bold">helvetica_Bold</string>
+    <string name="helveticaNeue_medium">helveticaNeue_medium</string>
+    <string name="helveticaNeue_Light">helveticaNeue_Light</string>
+    <string name="switch_to_wifi">You must be on WiFi to play music(change it in setting)</string>
+    <string name="no_net_msg">No Internet Connetcion</string>
+    <string name="date_validity_msg">Available November 1st through January 1st</string>
+</resources>

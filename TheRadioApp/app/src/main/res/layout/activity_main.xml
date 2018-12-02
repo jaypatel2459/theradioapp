@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_settings" />
+
+    <com.theradioapp.views.TextViewCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp20"
+        app:custom_fonts="@string/helvetica_Bold"
+        android:paddingStart="@dimen/dp15" />
+
+    <com.theradioapp.views.TextViewCustom
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp15"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:text="@string/title"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/sp15"
+        app:custom_fonts="@string/helveticaNeue_Light"
+        android:paddingStart="@dimen/dp15" />
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"
+        android:layout_marginLeft="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginRight="@dimen/dp15"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/main_placeholder" />
+
+    <FrameLayout
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp25">
+
+        <ImageView
+            android:id="@+id/ivPlayPause"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/play" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <com.theradioapp.views.TextViewCustom
+        android:id="@+id/tvNoNet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:text="@string/no_net_msg"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:custom_fonts="@string/helveticaNeue_medium" />
+
+
+    <include layout="@layout/bottom_sheet" />
+</LinearLayout>

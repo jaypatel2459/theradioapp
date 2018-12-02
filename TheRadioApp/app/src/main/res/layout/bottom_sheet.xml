@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/dp10">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <ImageView
+            android:id="@+id/ivThumb"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:gravity="center"
+            android:src="@drawable/ic_expand_less" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvNoRecent1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5E6168"
+                android:gravity="center|fill"
+                android:padding="@dimen/dp5"
+                android:text="No Recent Activity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvNoRecent2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="Click play to listen."
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.TextViewCustom
+                android:id="@+id/tvJustHeard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5E6168"
+                android:gravity="center|fill"
+                android:padding="@dimen/dp5"
+                android:text="You've just heard..."
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp15"
+                app:custom_fonts="@string/helveticaNeue_medium" />
+
+            <com.theradioapp.views.BottomSheetListView
+                android:id="@+id/lvRecent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="false"
+                android:nestedScrollingEnabled="false" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
